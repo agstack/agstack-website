@@ -1,5 +1,5 @@
 ---
-layout: api-index
+layout: index
 title: User registry API
 permalink: /user_registry_api
 horizontal: false
