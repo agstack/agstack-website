@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: index
 title: Asset registry API
 permalink: /asset_registry_api
 horizontal: false
