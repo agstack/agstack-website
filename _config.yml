@@ -2,24 +2,20 @@
 # Site settings
 # -----------------------------------------------------------------------------
 
-title: AgStack # the website title (if blank, full name will be used instead)
-first_name: Linux
-middle_name:
-last_name:
-email:
+title: The AgStack Foundation # the website title (if blank, full name will be used instead)
+owner: The AgStack Foundation
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
   Guides, projects, and resources that have information about the AgStack team and their efforts.
 footer_text: >
-  Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a>.
-  Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
-keywords: AgStack, agriculture, digital transfotmation # add your own keywords or leave empty
+  footer
+keywords: AgStack, agriculture, digital transformation # add your own keywords or leave empty
 
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
 icon: agstack-logo.png # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
-
+blog_nav_title: News
 url: https://agstack.github.io # the base hostname & protocol for your site
 baseurl:  # the subpath of your site, e.g. /blog/
-last_updated: false # set to true if you want to display last updated in the footer
+last_updated: true # set to true if you want to display last updated in the footer
 impressum_path:  # set to path to include impressum link in the footer, use the same path as permalink in a page, helps to conform with EU GDPR
 
 # -----------------------------------------------------------------------------
@@ -94,15 +90,18 @@ bing_site_verification:  # out your bing-site-verification ID (Bing Webmaster)
 collections:
   news:
     defaults:
-      layout: post
+      layout: archive
     output: true
-    permalink: /news/:path/
+    permalink: /news/:year:/:month:/:title:output_ext
   projects:
     output: true
-    permalink: /projects/:path/
+    defaults:
+      layout: page
+    output: true
+    permalink: /:path/
 
 news_scrollable: true # adds a vertical scroll bar if there are more than 3 news items
-news_limit: 5 # leave blank to include all the news in the `_news` folder
+news_limit: 10 # leave blank to include all the news in the `_news` folder
 
 # -----------------------------------------------------------------------------
 # Jekyll settings
@@ -122,12 +121,16 @@ kramdown:
       start_line: 1
 
 # Includes & excludes
-include: ['_pages']
+include:
+  - _pages
+  - _news
 exclude:
   - bin
   - Gemfile
   - Gemfile.lock
   - vendor
+  - archive
+  - .github
 keep_files:
   - CNAME
   - .nojekyll
@@ -155,7 +158,11 @@ defaults:
       path: "assets/**/*.*"
     values:
       sitemap: false
-
+  - scope:
+      path: "news"
+      type: "posts"
+    values:
+      layout: "post"
 # -----------------------------------------------------------------------------
 # Jekyll Minifier
 # -----------------------------------------------------------------------------
@@ -170,7 +177,7 @@ jekyll-minifier:
 # -----------------------------------------------------------------------------
 
 imagemagick:
-  enabled: false # enables responsive images for your site (recomended, see https://github.com/alshedivat/al-folio/issues/537)
+  enabled: true # enables responsive images for your site (recomended, see https://github.com/alshedivat/al-folio/issues/537)
   widths:
     - 480
     - 800
