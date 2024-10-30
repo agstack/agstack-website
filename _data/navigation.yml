@@ -1,6 +1,6 @@
 main:
   - title: "Projects"
-    url: /agstack-projects
+    url: /projects
   - title: "Membership"
     url: /membership
   - title: "Community"

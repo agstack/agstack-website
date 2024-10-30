@@ -1,0 +1,15 @@
+projects:
+  - name: "Asset Registry"
+    url: /projects/asset-registry
+    repo: https://github.com/agstack/asset-registry
+    description: "A tool for registering an asset (typically a polygon but it can be any geo-spatial geometry) and getting back a unique 256-byte/16-Char alphanumeric  ID for it."
+    logo: /assets/img/projects/project-logo-placeholder.png
+    alt: "A placeholder image, using the AgStack logo instead of a project logo"
+    type: grid
+  - name: "Field-Based Carbon Flux Model"
+    url: /projects/field-carbon-model
+    description: "A model for field-specific carbon flux estimation, based on the NASA Soil Moisture Active Passive (SMAP) Level 4 Carbon (L4C) model."
+    repo: https://github.com/agstack/field-carbon-model
+    logo: /assets/img/projects/project-logo-placeholder.png
+    alt: "A placeholder image, using the AgStack logo instead of a project logo"
+    type: grid
