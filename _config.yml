@@ -23,6 +23,7 @@ logo: "/assets/img/icon/color/agstack-icon-color.png"
 masthead_title: "The AgStack Foundation"
 date_format: "%B %-d, %Y"
 last_updated: true
+website_repo: https://github.com/agstack/agstack-website
 
 # Copyright & Legal stuff
 legal: true

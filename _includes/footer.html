@@ -19,7 +19,12 @@
             
                 <li><a href="{% if site.atom_feed.path %}{{ site.atom_feed.path }}{% else %}{{ '/feed.xml' | relative_url }}{% endif %}"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> {{ site.data.ui-text[site.locale].feed_label | default: "Feed" }}</a></li>
             </ul>
-        </div>          
+        </div>
+        {% if site.website_repo %}
+        <div class="container mt-5 legal">
+            <a href="{{ site.website_repo }}" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-github" aria-hidden="true"></i> Website repository</a>
+        </div>
+        {% endif %}
         <div class="container mt-5 legal">
             &copy; Copyright {{ site.time | date: '%Y' }} {{ site.owner }}. All rights reserved. 
             {{ site.footer_text }}
