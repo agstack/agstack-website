@@ -22,8 +22,24 @@ url: https://agstack.org # the base hostname & protocol for your site e.g. "http
 logo: "/assets/img/icon/color/agstack-icon-color.png"
 masthead_title: "The AgStack Foundation"
 date_format: "%B %-d, %Y"
+last_updated: true
+
+# Copyright & Legal stuff
+legal: true
+owner: "The Linux Foundation"
+trademark_policy: https://linuxfoundation.org/legal/trademark-usage
+privacy_policy: https://www.linuxfoundation.org/legal/privacy-policy
+terms_of_use: https://linuxfoundation.org/legal/terms
+antitrust: https://www.linuxfoundation.org/legal/antitrust-policy
+good_standing: https://www.linuxfoundation.org/legal/good-standing-policy
+
+# Custom CSS
+css: "/assets/css/agstack.css"
+
+# Reading stuff for articles
 read_time: # reading time estimates, e.g. true
 words_per_minute: # 200
+
 mathjax:
   enable: # MathJax equations, e.g. true, false (default)
   combo:  # "tex-svg" (default), "tex-mml-chtml", etc.: docs.mathjax.org/en/latest/web/components/combined.html
@@ -33,6 +49,14 @@ google_fonts:
     weights: "400,400i,700,700i"
   - name: "Lora"
     weights: "400,400i,700,700i"
+
+# Site Footer
+footer:
+  links:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/agstack"
+
 
 # Liquid
 liquid:
