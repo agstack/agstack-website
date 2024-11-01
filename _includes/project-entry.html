@@ -1,0 +1,28 @@
+<div class="grid__item">
+    <article class="archive__item" itemscope itemtype="https://schema.org/SoftwareApplication">
+        {% if project.name %}  
+            <h2 class="archive__item-title no_toc" itemprop="headline">
+                <a href="{{ project.url | relative_url }}" rel="permalink">{{ project.name }}</a>
+            </h2>
+        {% endif %}
+        {% if project.logo %}
+            <p>
+                <a href="{{ project.url | relative_url }}">
+                    <img 
+                        src="{{ project.logo }}"
+                        alt='{{ project.alt | default: "project logo"}}'
+                    />
+                </a>
+            </p>
+        {% endif %}
+        {% if project.description %}
+            <p class="archive__item-excerpt" itemprop="description">{{ project.description | markdownify | strip_html }}</p>
+        {% endif %}
+        {% if project.repo %}
+            <p>
+                <a href="{{ project.repo }}" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-github" aria-hidden="true"></i> GitHub</a> 
+            </p>
+        {% endif %}
+    </article>
+</div>
+  

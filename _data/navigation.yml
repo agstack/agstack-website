@@ -1,0 +1,15 @@
+main:
+  - title: "Projects"
+    url: /projects
+  - title: "Membership"
+    url: /membership
+  - title: "Community"
+    url: /community
+  - title: "Governance"
+    url: /governance
+  - title: "Contribute"
+    url: /contribute
+  - title: "About"
+    url: /about
+  - title: "Contact"
+    url: /contact
