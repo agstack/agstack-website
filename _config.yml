@@ -33,6 +33,7 @@ privacy_policy: https://www.linuxfoundation.org/legal/privacy-policy
 terms_of_use: https://linuxfoundation.org/legal/terms
 antitrust: https://www.linuxfoundation.org/legal/antitrust-policy
 good_standing: https://www.linuxfoundation.org/legal/good-standing-policy
+coc: https://events.linuxfoundation.org/about/code-of-conduct/ 
 
 # Custom CSS
 css: "/assets/css/agstack.css"
